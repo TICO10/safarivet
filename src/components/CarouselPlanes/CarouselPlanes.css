@@ -1,0 +1,43 @@
+.carousel-inner{
+  height: 800px;      /* Ajusta el alto fijo que desees */
+  object-fit: cover;  /* Hace que la imagen cubra el área sin deformarse */
+  width: 100%;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.galeria-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  display: contents;
+  color: #162a81;
+}
+
+@media (max-width: 768px) {
+    .galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .galeria-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,22 @@
+
+
+.text-center-contacto{
+  text-align: center;
+  color: #162a81;
+}
+
+@media (max-width: 768px) {
+    .galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+        padding: 16px;
+    }
+
+    .galeria-img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        object-fit: cover;
+    }
+}

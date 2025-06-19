@@ -1,0 +1,23 @@
+.appointment-form {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.appointment-form button {
+  grid-column: span 2;
+  background: #162a81;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

@@ -1,0 +1,63 @@
+.hero {
+  background: url('../assets/SafariVet.jpg') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 10rem 1rem;
+}
+
+.hero-content {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.hero-btn {
+  margin-top: 1rem;
+  background: white;
+  color: #162a81;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.form-section {
+  background: white;
+  color: black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.form-section-planes {
+  background: white;
+  color: black;
+  padding: 2rem;
+  text-align: center;
+  width: 50%;
+}
+
+.appointment-form {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form button {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.appointment-form button {
+  grid-column: span 2;
+  background: #162a81;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
