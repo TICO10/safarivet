@@ -47,3 +47,14 @@
 .modal-footer {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .appointment-form {
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-content: stretch;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
