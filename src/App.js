@@ -12,10 +12,12 @@ import ServiciosPage from './pages/ServiciosPage';
 import ContactoPage from './pages/ContactoPage';
 import AgendarCitaPage from './pages/AgendarCitaPage';
 import PlanesPage from './pages/PlanesPage';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
