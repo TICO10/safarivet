@@ -61,3 +61,13 @@
   border: none;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .form-section-planes {
+    background: white;
+    color: black;
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
