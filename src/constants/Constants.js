@@ -31,7 +31,7 @@ export const MAIL_URL = 'mailto:safarivetbogota@gmail.com';
 export const INSTAGRAM_URL = 'https://instagram.com/safarivetbogota';
 
 export const emailjsConfig = {
-  serviceId: 'service_o48u2oj',
-  templateId: 'template_mbwko9f', // Reemplaza por tu Template ID
-  userId: 'gBlwrzu3z36C4dUON',
+  serviceId: 'service_5s875mn',
+  templateId: 'template_6z5eybc', // Reemplaza por tu Template ID
+  userId: 'z4mC459UUeD_0RbfT',
 }
