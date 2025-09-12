@@ -1,28 +1,6 @@
 import React from 'react';
 import './CarouselServicios.css';
-
-// Reemplaza estos imports por tus imágenes reales
-import foto1 from '../../assets/servicios/CIRUJIAS.jpg';
-import foto2 from '../../assets/servicios/CONSULTAGENERAL.jpg';
-import foto3 from '../../assets/servicios/CONSULTANOCONVENCIONALES.jpg';
-import foto4 from '../../assets/servicios/CONSULTASESPECIALIZADAS.jpg';
-import foto5 from '../../assets/servicios/HOSPITALIZACION.jpg';
-import foto6 from '../../assets/servicios/ORTOPEDIA.jpg';
-import foto7 from '../../assets/servicios/PROFILAXIS.jpg';
-import foto8 from '../../assets/servicios/RADIOGRAFIA.jpg';
-import foto9 from '../../assets/servicios/URGENCIAS.jpg';
-
-const servicios = [
-  { img: foto1, titulo: 'Cirugías' },
-  { img: foto2, titulo: 'Consulta General' },
-  { img: foto3, titulo: 'Consulta No Convencionales' },
-  { img: foto4, titulo: 'Consultas Especializadas' },
-  { img: foto5, titulo: 'Hospitalización' },
-  { img: foto6, titulo: 'Ortopedia' },
-  { img: foto7, titulo: 'Profilaxis' },
-  { img: foto8, titulo: 'Radiografía' },
-  { img: foto9, titulo: 'Urgencias' },
-];
+import { servicios } from '../../constants/Constants.js';
 
 const CarouselServicios = () => (
   <div>

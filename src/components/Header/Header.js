@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from './../../logo SafariVet1.png';
 import './Header.css';
+import { servicios } from '../../constants/Constants.js';
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -55,14 +56,21 @@ function Header() {
           </button>
           {serviciosOpen && (
             <div className="dropdown-content">
-              <Link to="/servicios/cirugia" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Cirugias</Link>
-              <Link to="/servicios/consulta" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Consultas</Link>
-              <Link to="/servicios/hospitalizacion" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Hospitalización</Link>
-              <Link to="/servicios/radiografia" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Radiografía</Link>
-              <Link to="/servicios/profilaxis" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Profilaxis</Link>
-              <Link to="/servicios/ortopedia" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Ortopedia</Link>
-              <Link to="/servicios/urgencias" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Urgencias</Link>
-              <Link to="/servicios/vacunacion" onClick={() => { setMenuOpen(false); setServiciosOpen(false); }}>Vacunación</Link>
+              {servicios
+                .filter(servicio => servicio.visual === 1)
+                .map((servicio, index) => (
+                  <Link 
+                    key={index}
+                    to={`/servicios/${servicio.value}`}
+                    onClick={() => { 
+                      setMenuOpen(false); 
+                      setServiciosOpen(false); 
+                    }}
+                  >
+                    {servicio.titulo}
+                  </Link>
+                ))
+              }
             </div>
           )}
         </div>
