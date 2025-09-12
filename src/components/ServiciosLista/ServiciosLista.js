@@ -11,7 +11,9 @@ const ServiciosLista = () => {
         <div className="col-12 col-md-8">
           <ul className="list-group mb-5">
             {servicios.length > 0 ? (
-              servicios.map((servicio, idx) => (
+              servicios
+              .filter(servicio => servicio.visual === 1)
+              .map((servicio, idx) => (
                 <li className="list-group-item" id={servicio.value} key={idx}>
                   <Link className="text-decoration-none" to={`/servicios/${servicio.value}`}>
                     {servicio.titulo}

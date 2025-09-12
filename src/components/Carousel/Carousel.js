@@ -34,8 +34,8 @@ const Carousel = () => {
       }}
     >
       <div className="hero-content">
-        <h1>20% DE DESCUENTO EN VACUNACIÓN</h1>
-        <p>TODOS LOS MIÉRCOLES</p>
+        <h1>¡ATENCION 24 HORAS!</h1>
+        <p>EN SAFARIVET SIEMPRE PENSAMOS EN EL BIENESTAR DE TU MEJOR AMIGO</p>
         <button className="hero-btn" onClick={() => navigate("/agendar-cita")}>
           AGENDAR UNA CITA
         </button>
